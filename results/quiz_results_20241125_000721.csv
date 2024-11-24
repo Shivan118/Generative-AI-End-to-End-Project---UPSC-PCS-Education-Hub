@@ -1,0 +1,6 @@
+question_number,question,question_type,user_answer,correct_answer,is_correct,options
+1,What is the largest desert in the world?,MCQ,Gobi Desert,Sahara Desert,False,"['Gobi Desert', 'Sahara Desert', 'Mojave Desert', 'Atacama Desert']"
+2,What is the largest continent in the world?,MCQ,Asia,Asia,True,"['Asia', 'Africa', 'North America', 'South America']"
+3,What is the largest island in the Mediterranean Sea?,MCQ,Sicily,Sicily,True,"['Sicily', 'Sardinia', 'Corsica', 'Cyprus']"
+4,What is the longest river in South America?,MCQ,Rio Grande,Amazon River,False,"['Rio Grande', 'Amazon River', 'Orinoco River', 'Parana River']"
+5,What is the largest city in Australia?,MCQ,Melbourne,Sydney,False,"['Melbourne', 'Sydney', 'Brisbane', 'Perth']"
