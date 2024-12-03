@@ -62,8 +62,8 @@ This project addresses these challenges by providing an automated, AI-powered qu
 
 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd upsc-pcs-quiz-generator
+git clone https://github.com/Shivan118/Generative-AI-End-to-End-Project---UPSC-PCS-Education-Hub.git
+cd Generative-AI-End-to-End-Project---UPSC-PCS-Education-Hub
 ```
 
 2. Create Virtual Environment
@@ -73,10 +73,10 @@ conda create -p env python=3.10 -y
 
 3. Install Dependencies
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 ```
 
-4. Environment Configuration Create a .env file in the root directory:
+4. Environment Configuration - Create a .env file in the root directory:
 ```bash
 GROQ_API_KEY=your_groq_api_key_here
 ```
