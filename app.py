@@ -56,6 +56,7 @@ class QuizManager:
                 user_answer = st.radio(
                     f"Select an answer for Question {i+1}", 
                     q['options'], 
+                    index=None,
                     key=f"mcq_{i}"
                 )
                 self.user_answers.append(user_answer)
@@ -198,9 +199,12 @@ def main():
         
         # Submit quiz button handler
         if st.button("Submit Quiz"):
-            st.session_state.quiz_manager.evaluate_quiz()
-            st.session_state.quiz_submitted = True
-            st.rerun()
+            if None in st.session_state.quiz_manager.user_answers or "" in st.session_state.quiz_manager.user_answers:
+                st.warning("Please answer all questions before submitting.")
+            else:
+                st.session_state.quiz_manager.evaluate_quiz()
+                st.session_state.quiz_submitted = True
+                st.rerun()
     
     # Display results if quiz is submitted
     if st.session_state.quiz_submitted:
